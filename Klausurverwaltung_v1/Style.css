@@ -194,4 +194,18 @@ nav li:hover{
 	border-right: 3px solid skyblue;
 }
 .selected a {color: black}
+
+<!-- MP: Ein und Ausklappen -->
+
+dd{ 
+	display: none; 
+}
+
+.closed {
+	background: red;
+}
+
+.open {
+	background: green;
+}
 		
