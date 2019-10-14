@@ -197,15 +197,13 @@ nav li:hover{
 
 <!-- MP: Ein und Ausklappen -->
 
-dd{ 
+dd { 
 	display: none; 
 }
 
 .closed {
-	background: red;
+	
 }
 
-.open {
-	background: green;
-}
+
 		

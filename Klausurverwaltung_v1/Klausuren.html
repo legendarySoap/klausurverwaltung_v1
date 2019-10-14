@@ -3,6 +3,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Klausuren</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <link type="text/css" rel="stylesheet" href="Style.css">
 <link type="text/css" rel="stylesheet" href="bootstrap.min.css">
 </head>
@@ -36,7 +37,7 @@
 		$(document).ready(function(){
 			$("dt").click(function(){
 				$(this).next("dd").slideToggle("fast");
-				
+				//Wenn 
 				$(this).children("a").toggleClass("closed open");
 			});
 		});
