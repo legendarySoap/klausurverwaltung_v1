@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Klausuren</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<link type="text/css" rel="stylesheet" href="Style.css">
+<link type="text/css" rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+	<h1> Klausuruebersicht</h1>
+	<nav>
+		<ul>
+			<li> Startseite </li>
+			<li class = "selected"> <a href = "Klausuren.html"> Klausuren </a> </li>
+			<li> <a href = "Kalender.html"> Kalender</a> </li>
+			<li> <a href = "MeinKonto.html"> Mein Konto</a></li>
+		</ul>
+	</nav>
+	
+	<input type = "button" name = "AddKlausur">
+	
+	<!--  Klausurliste -->
+	<dl>
+		<dt> <a href = "#" class = "closed"> Überschrift 1</a> </dt>
+			<dd> Detailierte Beschreibung </dd>
+		<dt> <a href = "#" class = "closed"> Überschrift 2</a> </dt>
+			<dd> Detailierte Beschreibung </dd>
+		<dt> <a href = "#" class = "closed"> Überschrift 3</a> </dt>
+			<dd> Detailierte Beschreibung </dd>
+		<dt> <a href = "#" class = "closed"> Überschrift 4 </a> </dt>
+			<dd> Detailierte Beschreibung </dd>
+	</dl>
+	
+	<script>
+	
+		$(document).ready(function(){
+			$("dt").click(function(){
+				$(this).next("dd").slideToggle("fast");
+				//Wenn 
+				$(this).children("a").toggleClass("closed open");
+			});
+		});
+	
+	</script>
+	
+</body>
+</html>
